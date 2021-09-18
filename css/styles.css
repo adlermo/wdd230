@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Roboto+Slab&display=swap");
+
+:root {
+  --light-blue: #a4b5e1;
+  --title-fonts: "Roboto Slab", serif;
+  --paragraph-fonts: "Asap", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--title-fonts);
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0 5px;
+}
+
+span,
+li,
+a,
+p {
+  font-family: var(--paragraph-fonts);
+}
+
+header {
+  max-width: 1366px;
+  margin: 0 auto;
+
+  border-radius: 0 0 5px 5px;
+
+  padding: 5vh;
+
+  background-color: var(--light-blue);
+}
+
+img {
+  float: right;
+  width: 20%;
+
+  box-shadow: 1px 1px 10px #1f1f1f;
+}
+
+.name {
+  width: 70%;
+  text-align: center;
+
+  display: inline-flex;
+}
+
+section {
+  max-width: 1366px;
+  padding: 10vh 0.5vw;
+
+  margin: 0 auto;
+}
+
+ul > * {
+  margin: 5px 0;
+}
+
+footer {
+  max-width: 1366px;
+  margin: 0 auto;
+
+  background-color: var(--light-blue);
+  display: flex;
+
+  padding: 3vh;
+
+  flex-direction: column;
+  border-radius: 5px 5px 0 0;
+}
+
+footer > p {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .name {
+    display: block;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+
+  img {
+    float: none;
+    width: 100%;
+  }
+}
