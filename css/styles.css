@@ -15,10 +15,10 @@ h5,
 h6,
 p {
   font-family: var(--title-fonts);
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   padding: 0;
   border: 0;
-  margin: 0 5px;
+  margin: 0 5px; */
 }
 
 span,
