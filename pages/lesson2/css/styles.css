@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Roboto+Slab&display=swap");
+
+:root {
+  --light-green: #a4e1a6;
+  --title-fonts: "Roboto Slab", serif;
+  --paragraph-fonts: "Asap", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: var(--title-fonts);
+  /* box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0 5px; */
+}
+
+span,
+li,
+a,
+p {
+  font-family: var(--paragraph-fonts);
+}
+
+header {
+  max-width: 1366px;
+  margin: 0 auto;
+
+  border-radius: 0 0 5px 5px;
+
+  padding: 5vh;
+
+  background-color: var(--light-green);
+}
+
+article.main {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5vh 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section.card {
+    
+    margin: 0 15px;
+    padding: 0 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px #2e2a2e;
+    border: 1px solid var(--light-green);
+}
+
+section.card > img {
+    width: 100%;
+}
+
+footer {
+  background-color: var(--light-green);
+}

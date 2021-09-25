@@ -64,23 +64,6 @@ ul > * {
   margin: 5px 0;
 }
 
-footer {
-  max-width: 1366px;
-  margin: 0 auto;
-
-  background-color: var(--light-blue);
-  display: flex;
-
-  padding: 3vh;
-
-  flex-direction: column;
-  border-radius: 5px 5px 0 0;
-}
-
-footer > p {
-  text-align: center;
-}
-
 @media screen and (max-width: 500px) {
   .name {
     display: block;
