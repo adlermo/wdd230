@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Raleway&display=swap");
+
+:root {
+  --title-font: "Dosis", sans-serif;
+  --body-font: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+}
+
+p,
+a,
+li {
+  font-family: var(--body-font);
+}

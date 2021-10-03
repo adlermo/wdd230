@@ -1,0 +1,17 @@
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+
+  padding: 0 5vw;
+}
+
+@media screen and (min-width: 680px) and (max-width: 1366px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main > * {
+    padding: 0 25px;
+  }
+}
