@@ -11,7 +11,7 @@ main {
         grid-template-columns: 1fr 1fr;
     }
 
-    img {
+    section.theme img {
         width: 75%;
         padding: 5px;
     }
