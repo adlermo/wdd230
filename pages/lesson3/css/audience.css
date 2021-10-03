@@ -5,13 +5,53 @@ main {
   padding: 0 5vw;
 }
 
-@media screen and (min-width: 680px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+@media screen and (min-width: 769px) {
+  main > * {
+    padding: 0 15px;
   }
 
-  main > * {
-    padding: 0 25px;
+  section.card {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, auto);
+  }
+
+  section.card > * {
+    grid-column: 2;
+  }
+
+  section.card h3 {
+    grid-column: span 2;
+  }
+
+  section.card img {
+    grid-column: 1;
+    grid-row: 2 / span 6;
+  }
+
+  section.card :nth-last-child(2) {
+    grid-row: 6;
+  }
+
+  section.card :last-child {
+    grid-row: 7;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.personas {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section.personas h2 {
+    width: 100%;
+  }
+
+  section.personas .card {
+    width: 40%;
+    padding: 0 5%;
+    display: block;
   }
 }
