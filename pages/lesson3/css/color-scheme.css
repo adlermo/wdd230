@@ -1,0 +1,18 @@
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+
+  padding: 0 5vw;
+}
+
+@media screen and (min-width: 680px) and (max-width: 1366px) {
+    section.theme {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+        width: 75%;
+        padding: 5px;
+    }
+}
