@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+
+    <title>Preston Weather</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img
+          src="../lesson3/images/umbrella_icon.svg"
+          alt="Web Site Logo"
+          width="80"
+          height="80"
+        />
+      </picture>
+      <section>
+        <h1>Seu Tempo SP</h1>
+        <q><em>The web pages impact phrase/motto!</em></q>
+      </section>
+    </header>
+    <nav>
+      <section id="navMobile">
+        <input type="checkbox" id="checkbox-menu" />
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <h2>MENU</h2>
+      </section>
+      <ul hidden id="toggleMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Preston Idaho</h2>
+      <div class="contentBox">Weather summary</div>
+      <div class="contentBox">5 Day Forecast</div>
+      <div class="contentBox">Article</div>
+      <div class="contentBox">Contact Information</div>
+    </main>
+    <footer>
+      <p>
+        © Seu Tempo SP | Adler M. Orteney |
+        <a href="#">Service Terms</a>
+      </p>
+      <p id="lastUpdated"></p>
+    </footer>
+
+    <script>
+      document.getElementById("lastUpdated").textContent =
+        new Date().toLocaleDateString("en-UK", {
+          weekday: "long",
+          day: "2-digit",
+          month: "long",
+          year: "numeric",
+        });
+    </script>
+    <script src="./js/min-nav.js"></script>
+  </body>
+</html>
