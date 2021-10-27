@@ -1,0 +1,27 @@
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+section picture img {
+  margin: 2vh 0;
+  box-shadow: 1px 1px 5px #1e1e1e;
+
+  filter: blur(0em);
+  transition: filter 2.5s;
+}
+
+[data-src] {
+  min-width: 300px;
+  min-height: 400px;
+
+  filter: blur(0.3em);
+}
