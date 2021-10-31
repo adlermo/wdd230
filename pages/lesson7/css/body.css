@@ -1,0 +1,19 @@
+.contentBox {
+  border: 1px dashed var(--blue-ncs);
+  background-color: var(--light-yellow);
+
+  margin: 0.5em 0;
+  padding: 1em;
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 581px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) {
+}
