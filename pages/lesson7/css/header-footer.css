@@ -10,7 +10,7 @@ header {
   background-color: var(--black-fogra-29);
   color: var(--light-yellow);
 
-  min-width: 100vw;
+  min-width: 100%;
 }
 
 header {
