@@ -18,6 +18,7 @@ main > picture:hover {
 main > picture > img {
   border: 1px solid var(--persian-orange);
 }
+
 main > picture > p {
   padding: 5px;
 }
