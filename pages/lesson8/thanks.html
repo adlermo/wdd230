@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="../seutemposp/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../seutemposp/css/typography.css" />
+    <link rel="stylesheet" href="../seutemposp/css/header-footer.css" />
+    <link rel="stylesheet" href="../seutemposp/css/nav.css" />
+    <link rel="stylesheet" href="../seutemposp/css/reset.css" />
+    <link rel="stylesheet" href="../seutemposp/css/stormcenter.css" />
+
+    <title>Gallery</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img
+          src="../lesson3/images/umbrella_icon.svg"
+          alt="Web Site Logo"
+          width="80"
+          height="80"
+        />
+      </picture>
+      <section>
+        <h1>Seu Tempo SP</h1>
+        <q><em>The web page's impact phrase/motto!</em></q>
+      </section>
+    </header>
+    <nav>
+      <section id="navMobile">
+        <input type="checkbox" id="checkbox-menu" />
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </section>
+      <ul hidden id="toggleMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="./stormcenter.html">Storm Center</a></li>
+        <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Thanks for your report.</h2>
+        <h2>We'll reach out to you asap!</h2>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © Seu Tempo SP | Adler M. Orteney |
+        <a href="#">Service Terms</a>
+      </p>
+      <p id="lastUpdated"></p>
+    </footer>
+
+    <script>
+      document.getElementById("lastUpdated").textContent =
+        new Date().toLocaleDateString("en-UK", {
+          weekday: "long",
+          day: "2-digit",
+          month: "long",
+          year: "numeric",
+        });
+    </script>
+    <script src="./js/min-nav.js"></script>
+  </body>
+</html>

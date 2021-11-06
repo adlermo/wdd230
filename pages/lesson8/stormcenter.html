@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="../seutemposp/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../seutemposp/css/typography.css" />
+    <link rel="stylesheet" href="../seutemposp/css/header-footer.css" />
+    <link rel="stylesheet" href="../seutemposp/css/nav.css" />
+    <link rel="stylesheet" href="../seutemposp/css/reset.css" />
+    <link rel="stylesheet" href="../seutemposp/css/stormcenter.css" />
+
+    <title>Storm Center</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img
+          src="../lesson3/images/umbrella_icon.svg"
+          alt="Web Site Logo"
+          width="80"
+          height="80"
+        />
+      </picture>
+      <section>
+        <h1>Seu Tempo SP</h1>
+        <q><em>The web page's impact phrase/motto!</em></q>
+      </section>
+    </header>
+    <nav>
+      <section id="navMobile">
+        <input type="checkbox" id="checkbox-menu" />
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </section>
+      <ul hidden id="toggleMenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a class="active" href="#">Storm Center</a></li>
+        <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Storm Report Form</h2>
+        <p style="font-size: 0.8em">
+          Please enter your data acccording to the description
+        </p>
+        <form onsubmit="event.preventDefault(); thanksOnSubmit();">
+          <label for="fullname">
+            Fullname:
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              pattern="[A-Za-z ]{5,}"
+              required
+            />
+          </label>
+
+          <label for="email">
+            Best email:
+            <input type="email" id="email" name="email" />
+          </label>
+
+          <label for="phone">
+            Phone Number:
+            <input type="tel" id="phone" name="phone" />
+          </label>
+
+          <label for="zipcode">
+            Zipcode:
+            <input type="number" id="zipcode" name="zipcode" />
+          </label>
+
+          <label for="date">
+            Storm Date:
+            <input type="date" id="date" name="date" />
+          </label>
+
+          <label for="type">
+            Storm Type:
+            <input list="types" id="type" name="type" />
+            <datalist id="types">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist>
+          </label>
+
+          <label for="severity">
+            Storm Severity:
+            <input
+              type="range"
+              id="severity"
+              name="severity"
+              min="1"
+              max="10"
+            />
+          </label>
+
+          <label for="region">
+            Storm Region:
+            <select name="region" id="region">
+              <option disabled selected>Select Region...</option>
+              <option value="preston">Preston</option>
+              <option value="sodasprings">Soda Springs</option>
+              <option value="fishhaven">Fish Haven</option>
+            </select>
+          </label>
+
+          <label class="danger"> Are you in danger? </label>
+          <label for="yes">
+            <input type="radio" id="yes" name="danger" value="yes" />
+            Yes
+          </label>
+          <label for="maybe">
+            <input type="radio" id="maybe" name="danger" value="maybe" />
+            Maybe
+          </label>
+          <label for="no">
+            <input type="radio" id="no" name="danger" value="no" />
+            No
+          </label>
+
+          <label for="comments">
+            Additional information or comments:
+            <textarea name="comments" id="comments"></textarea>
+          </label>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © Seu Tempo SP | Adler M. Orteney |
+        <a href="#">Service Terms</a>
+      </p>
+      <p id="lastUpdated"></p>
+    </footer>
+
+    <script>
+      document.getElementById("lastUpdated").textContent =
+        new Date().toLocaleDateString("en-UK", {
+          weekday: "long",
+          day: "2-digit",
+          month: "long",
+          year: "numeric",
+        });
+    </script>
+    <script src="../seutemposp/js/min-nav.js"></script>
+  </body>
+</html>
