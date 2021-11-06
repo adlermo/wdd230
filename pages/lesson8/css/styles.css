@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap");
+
+:root {
+  --td-light-gray: #e7f0ed;
+  --td-light-green: #e7ffed;
+
+  --blue-header: #628ca6;
+  --green-header: #7fb9c2;
+
+  --border: #b1b1b1;
+  --shadow: #628ca6;
+}
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table {
+  margin: 0.5em auto;
+  border: 0.1em solid var(--border);
+  box-shadow: 0.5em 0.5em 0.7em var(--shadow);
+  border-collapse: collapse;
+}
+
+thead > tr:nth-child(1) {
+  background-color: var(--green-header);
+}
+
+thead > tr:nth-child(2) {
+  background-color: var(--blue-header);
+  color: #fff;
+}
+
+tbody > tr:nth-child(even) {
+  background-color: var(--td-light-green);
+}
+tbody > tr:nth-child(odd) {
+  background-color: var(--td-light-gray);
+}
+
+tfoot {
+  background-color: var(--green-header);
+}
+
+th,
+td {
+  padding: 0.5em;
+  text-align: center;
+
+  border: 0.1em solid var(--border);
+}
+
+p {
+  font-size: 0.7em;
+}
+
+tbody > tr:nth-child(4) > td:nth-child(3) {
+  background-color: var(--blue-header);
+  color: #fff;
+}
+
+@media screen and (min-width: 1020px) {
+  body {
+    font-size: 20px;
+  }
+}
