@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+
+:root {
+  --card-bg-color: #a1a2e3;
+  --blue: #2a2b7c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen Mono", monospace;
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--blue);
+  margin: 0.5em 0;
+}
+
+#cards {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-items: center;
+  justify-content: center;
+}
+
+#cards > section {
+  width: 95%;
+  margin: 0 auto;
+
+  padding: 1em 0;
+  margin: 1em 0;
+
+  border: 1px solid var(--blue);
+  background-color: var(--card-bg-color);
+}
+
+#cards > section > img {
+  object-fit: cover;
+  width: 80%;
+  height: 75%;
+
+  box-shadow: 0 0 15px var(--blue);
+  margin: 0.5em auto;
+}
+
+footer {
+  padding: 1em;
+  text-align: center;
+
+  background-color: var(--blue);
+  color: white;
+}
+
+@media screen and (min-width: 622px) and (max-width: 1019px) {
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
