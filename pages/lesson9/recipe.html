@@ -6,28 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <style>
-      pre {
-        display: flex;
-        flex-wrap: wrap;
+      :root {
+        font-family: "Roboto", monospace;
+      }
 
-        max-width: 90vw;
+      body {
+        max-width: 900px;
+        margin: 1px auto;
+      }
+
+      @media screen {
       }
     </style>
 
     <title>Recipes Example</title>
   </head>
   <body>
-    <header></header>
-    <main>
+    <header>
       <h1>My APIs Presentation</h1>
-      <video width="700" controls>
+    </header>
+    <main>
+      <video width="100%" controls>
         <source src="./assets/api-adler.mp4" type="video/mp4" />
       </video>
-    </main>
-    <footer>
       <h1>Recipes FETCH example</h1>
       <section id="recipes"></section>
-    </footer>
-    <script src="recipe.js" defer></script>
+    </main>
+    <footer></footer>
+    <script src="api/recipe.js" defer></script>
   </body>
 </html>

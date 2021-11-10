@@ -1,0 +1,59 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Simple Syrup",
+      "ingredients": [
+        {
+          "amount": 0.5,
+          "measure": "CUP",
+          "description": "granulated sugar"
+        },
+        {
+          "amount": 0.5,
+          "measure": "CUP",
+          "description": "water"
+        }
+      ],
+      "steps": [
+        "Add the sugar and water to a small saucepan over medium heat.",
+        "Stir until sugar is dissolved.",
+        "Let cool, then pour into a glass jar and seal tightly with a lid.",
+        "Simple syrup will keep, refrigerated, for about one month."
+      ],
+      "name": "Adler"
+    },
+    {
+      "id": 2,
+      "title": "Salt Bread",
+      "ingredients": [
+        {
+          "amount": 1,
+          "measure": "CUP",
+          "description": "flour"
+        },
+        {
+          "amount": 0.5,
+          "measure": "CUP",
+          "description": "water"
+        },
+        {
+          "amount": 2,
+          "measure": "TEASPOON",
+          "description": "salt"
+        },
+        {
+          "amount": 0.2,
+          "measure": "POUNDS",
+          "description": "biological yeast"
+        }
+      ],
+      "steps": [
+        "Mix all ingredientss but the biological yeast in a basket.",
+        "Stir until everything is dissolved, add the yeast then let it rest.",
+        "When it's grown prepare the dough in balls and put to the heat in 356°F.",
+        "Turn off the oven when the rind is golden."
+      ]
+    }
+  ]
+}

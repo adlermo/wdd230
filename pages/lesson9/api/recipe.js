@@ -4,17 +4,13 @@ const recipesList = document.querySelector("#recipes");
  * Function fetch all recipes
  */
 const getRecipes = () => {
-  fetch("http://localhost:8080/recipes")
+  fetch("api/recipes.json")
     .then((res) => {
-      // res is OK?
-      if (res.ok) {
-        return res.json();
-      }
+      return res.json();
     })
-    .then((recipes) => {
-      recipes.forEach((element) => {
-        createCard(element);
-      });
+    .then((list) => {
+      const { recipes } = list;
+      recipes.forEach((element) => createCard(element));
     });
 };
 
