@@ -55,7 +55,7 @@ footer > p > a {
   color: var(--light-yellow);
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 568px) {
   body {
     font-size: 12px;
   }

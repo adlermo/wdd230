@@ -1,0 +1,66 @@
+/** 
+ * Colors variables index 
+
+  --black-fogra-29: #0d1f2d;
+  --middle-green: #4c956c;
+  --light-yellow: #fefee3;
+  --blue-ncs: #0090c1;
+  --persian-orange: #d68c45; 
+**/
+
+p {
+  margin: 0.5em 0;
+}
+
+#towns {
+  display: flex;
+  flex-direction: column;
+}
+
+#towns > section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: var(--middle-green);
+
+  margin: 0.5em;
+  padding: 1em;
+}
+
+#towns > section > div {
+  padding: 1em 0;
+}
+
+#towns > section > img {
+  max-height: 420px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 568px) and (max-width: 1020px) {
+  #towns > section {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    flex-direction: row;
+  }
+  #towns > section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  #towns > section > img {
+    width: 50%;
+  }
+
+  #towns > section > div {
+    width: 50%;
+    text-align: center;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #towns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

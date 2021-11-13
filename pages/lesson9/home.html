@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../seutemposp/css/typography.css" />
-    <link rel="stylesheet" href="../seutemposp/css/header-footer.css" />
-    <link rel="stylesheet" href="../seutemposp/css/nav.css" />
-    <link rel="stylesheet" href="../seutemposp/css/body.css" />
-    <link rel="stylesheet" href="../seutemposp/css/reset.css" />
+    <link
+      rel="shortcut icon"
+      href="../seutemposp/images/favicon.ico"
+      type="image/x-icon"
+    />
 
-    <title>Preston Weather</title>
+    <link rel="stylesheet" href="../seutemposp/css/header-footer.css" />
+    <link rel="stylesheet" href="../seutemposp/css/home.css" />
+    <link rel="stylesheet" href="../seutemposp/css/nav.css" />
+    <link rel="stylesheet" href="../seutemposp/css/reset.css" />
+    <link rel="stylesheet" href="../seutemposp/css/typography.css" />
+
+    <title>Home</title>
   </head>
   <body>
     <header>
@@ -35,24 +41,21 @@
           <span></span>
           <span></span>
         </label>
-        <h2>MENU</h2>
       </section>
       <ul hidden id="toggleMenu">
-        <li><a href="#">Home</a></li>
+        <li><a class="active" href="#">Home</a></li>
         <li><a href="#">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Center</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+        <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
+
     <main>
-      <h2>Preston Idaho</h2>
-      <div class="contentBox">Weather summary</div>
-      <div class="contentBox">5 Day Forecast</div>
-      <div class="contentBox">Article</div>
-      <div class="contentBox">Contact Information</div>
+      <section id="towns"></section>
     </main>
+
     <footer>
       <p>
         © Seu Tempo SP | Adler M. Orteney |
@@ -70,6 +73,8 @@
           year: "numeric",
         });
     </script>
-    <script src="./js/min-nav.js"></script>
+
+    <script src="../seutemposp/js/min-nav.js" defer></script>
+    <script src="../seutemposp/js/town-service.js" defer></script>
   </body>
 </html>
