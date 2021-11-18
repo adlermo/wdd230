@@ -1,0 +1,11 @@
+#summary {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#summary > ul > li {
+  list-style-type: none;
+  margin: 0.5em 0;
+}

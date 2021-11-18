@@ -10,10 +10,10 @@
       type="image/x-icon"
     />
 
-    <link rel="stylesheet" href="../seutemposp/css/header-footer.css" />
-    <link rel="stylesheet" href="../seutemposp/css/home.css" />
-    <link rel="stylesheet" href="../seutemposp/css/nav.css" />
     <link rel="stylesheet" href="../seutemposp/css/reset.css" />
+    <link rel="stylesheet" href="../seutemposp/css/header-footer.css" />
+    <link rel="stylesheet" href="../seutemposp/css/nav.css" />
+    <link rel="stylesheet" href="../seutemposp/css/preston.css" />
     <link rel="stylesheet" href="../seutemposp/css/typography.css" />
 
     <title>Home</title>
@@ -43,8 +43,8 @@
         </label>
       </section>
       <ul hidden id="toggleMenu">
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="../lesson10/preston-10.html">Preston</a></li>
+        <li><a href="../lesson9/home.html">Home</a></li>
+        <li><a class="active" href="#">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
@@ -53,7 +53,21 @@
     </nav>
 
     <main>
-      <section id="towns"></section>
+      <section>
+        <div id="summary">
+          <h1>Weather Summary</h1>
+          <ul>
+            <li id="current-temp">Current:</li>
+            <li id="maxmin">Temperature:</li>
+            <li id="humidity">Humidity:</li>
+            <li id="wspeed">Wind Speed:</li>
+            <li id="chill">Wind Chill:</li>
+          </ul>
+        </div>
+      </section>
+      <section id="forecast">
+        <table></table>
+      </section>
     </main>
 
     <footer>
@@ -76,6 +90,6 @@
     </script>
 
     <script src="../seutemposp/js/min-nav.js" defer></script>
-    <script src="../seutemposp/js/town-service.js" defer></script>
+    <script src="../seutemposp/js/weatherapi.js" defer></script>
   </body>
 </html>
