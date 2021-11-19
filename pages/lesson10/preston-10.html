@@ -53,8 +53,8 @@
     </nav>
 
     <main>
-      <section>
-        <div id="summary">
+      <section id="summary">
+        <div>
           <h1>Weather Summary</h1>
           <ul>
             <li id="current-temp">Current:</li>
@@ -66,7 +66,37 @@
         </div>
       </section>
       <section id="forecast">
-        <table></table>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="5" scope="colgroup">5 Day Forecast</th>
+            </tr>
+            <tr>
+              <td id="day0" scope="col">XXX</td>
+              <td id="day1" scope="col">XXX</td>
+              <td id="day2" scope="col">XXX</td>
+              <td id="day3" scope="col">XXX</td>
+              <td id="day4" scope="col">XXX</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="fc0"></td>
+              <td id="fc1"></td>
+              <td id="fc2"></td>
+              <td id="fc3"></td>
+              <td id="fc4"></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5">
+                Provided by:
+                <a href="https://openweathermap.org/">OpenWeatherMap.org </a>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
       </section>
     </main>
 
@@ -79,14 +109,13 @@
     </footer>
 
     <script>
-      document.getElementById(
-        'lastUpdated'
-      ).textContent = new Date().toLocaleDateString('en-UK', {
-        weekday: 'long',
-        day: '2-digit',
-        month: 'long',
-        year: 'numeric',
-      });
+      document.getElementById("lastUpdated").textContent =
+        new Date().toLocaleDateString("en-UK", {
+          weekday: "long",
+          day: "2-digit",
+          month: "long",
+          year: "numeric",
+        });
     </script>
 
     <script src="../seutemposp/js/min-nav.js" defer></script>
