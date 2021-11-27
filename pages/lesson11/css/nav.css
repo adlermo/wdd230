@@ -1,0 +1,120 @@
+nav {
+  background-color: var(--black-fogra-29);
+  color: var(--light-yellow);
+  padding: 5px 0;
+}
+
+nav > section {
+  display: flex;
+  justify-content: center;
+  padding: 0.3em 0;
+}
+
+nav > section > h2 {
+  margin: 0 1em 0 0;
+  text-align: center;
+}
+
+nav > #toggleMenu {
+  flex-direction: column;
+
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > #toggleMenu > li {
+  text-align: center;
+  margin: 1em 0;
+}
+
+nav > #toggleMenu > li > a {
+  color: var(--light-yellow);
+  width: 100%;
+  height: 100%;
+  padding: 0.5em 0.5em;
+}
+
+nav > #toggleMenu > li > a.active {
+  background-color: var(--light-yellow);
+  color: var(--black-fogra-29);
+  opacity: 0.5;
+}
+
+nav > #toggleMenu > li > a:hover {
+  background-color: var(--light-yellow);
+  color: var(--black-fogra-29);
+  opacity: 1;
+}
+
+/* Hamburguer checknox */
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+}
+
+#checkbox-menu {
+  position: absolute;
+  opacity: 0;
+}
+
+label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 1.3em;
+  width: 1.8em;
+}
+
+label span {
+  position: absolute;
+  display: block;
+  height: 0.3em;
+  width: 100%;
+  border-radius: 1.8em;
+  background: var(--light-yellow);
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+  top: 0;
+}
+
+label span:nth-child(2) {
+  top: 0.5em;
+}
+
+label span:nth-child(3) {
+  top: 1em;
+}
+
+#checkbox-menu:checked + label span:nth-child(1) {
+  transform: rotate(-45deg);
+  top: 0.5em;
+}
+
+#checkbox-menu:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3) {
+  transform: rotate(45deg);
+  top: 0.5em;
+}
+
+@media screen and (min-width: 568px) {
+  body {
+    font-size: 17px;
+  }
+
+  #navMobile {
+    display: none;
+  }
+
+  nav > #toggleMenu {
+    display: flex;
+    flex-direction: row;
+  }
+}

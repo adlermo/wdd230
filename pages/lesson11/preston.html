@@ -4,17 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="shortcut icon"
-      href="../seutemposp/images/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="../seutemposp/css/reset.css" />
-    <link rel="stylesheet" href="../seutemposp/css/header-footer.css" />
-    <link rel="stylesheet" href="../seutemposp/css/nav.css" />
-    <link rel="stylesheet" href="../seutemposp/css/preston.css" />
-    <link rel="stylesheet" href="../seutemposp/css/typography.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/preston.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
 
     <title>Home</title>
   </head>
@@ -22,7 +18,7 @@
     <header>
       <picture>
         <img
-          src="../lesson3/images/umbrella_icon.svg"
+          src="./images/umbrella_icon.svg"
           alt="Web Site Logo"
           width="80"
           height="80"
@@ -43,26 +39,30 @@
         </label>
       </section>
       <ul hidden id="toggleMenu">
-        <li><a href="../lesson9/home.html">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a class="active" href="#">Preston</a></li>
-        <li><a href="#">Soda Springs</a></li>
-        <li><a href="#">Fish Haven</a></li>
-        <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
-        <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        <li><a href="./soda springs.html">Soda Springs</a></li>
+        <li><a href="./fish haven.html">Fish Haven</a></li>
+        <li><a href="./stormcenter.html">Storm Center</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
       </ul>
     </nav>
 
     <main>
-      <section id="summary">
-        <div>
-          <h1>Weather Summary</h1>
-          <ul>
-            <li id="current-temp">Current:</li>
-            <li id="maxmin">Temperature:</li>
-            <li id="humidity">Humidity:</li>
-            <li id="wspeed">Wind Speed:</li>
-            <li id="chill">Wind Chill:</li>
-          </ul>
+      <section>
+        <h1>Preston Idaho</h1>
+
+        <div id="summary">
+          <div>
+            <h1>Weather Summary</h1>
+            <ul>
+              <li id="current-temp">Current:</li>
+              <li id="maxmin">Temperature:</li>
+              <li id="humidity">Humidity:</li>
+              <li id="wspeed">Wind Speed:</li>
+              <li id="chill">Wind Chill:</li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="forecast">
@@ -98,8 +98,30 @@
           </tfoot>
         </table>
       </section>
+      <section id="article">
+        <article>
+          <h2>Article Title</h2>
+          <h5>by Unkown</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            consectetur dignissimos placeat minus nam magnam rem commodi,
+            explicabo totam officiis reiciendis necessitatibus earum incidunt
+            pariatur molestiae quaerat optio laborum non.
+          </p>
+        </article>
+      </section>
     </main>
-    
+
+    <section id="maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628260194!2d-111.91534452151303!3d42.099805311949424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1638039758162!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="300px"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
     <footer>
       <p>
         © Seu Tempo SP | Adler M. Orteney |
@@ -118,7 +140,7 @@
         });
     </script>
 
-    <script src="../seutemposp/js/min-nav.js" defer></script>
-    <script src="../seutemposp/js/weatherapi.js" defer></script>
+    <script src="./js/min-nav.js" defer></script>
+    <script src="./js/preston.js" defer></script>
   </body>
 </html>

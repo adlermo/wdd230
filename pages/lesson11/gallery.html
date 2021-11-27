@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/body.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+
+    <title>Gallery</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img
+          src="./images/umbrella_icon.svg"
+          alt="Web Site Logo"
+          width="80"
+          height="80"
+        />
+      </picture>
+      <section>
+        <h1>Seu Tempo SP</h1>
+        <q><em>The web page's impact phrase/motto!</em></q>
+      </section>
+    </header>
+    <nav>
+      <section id="navMobile">
+        <input type="checkbox" id="checkbox-menu" />
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </section>
+      <ul hidden id="toggleMenu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./preston.html">Preston</a></li>
+        <li><a href="./soda springs.html">Soda Springs</a></li>
+        <li><a href="./fish haven.html">Fish Haven</a></li>
+        <li><a href="./stormcenter.html">Storm Center</a></li>
+        <li><a class="active" href="#">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <picture>
+        <img
+          src="./images/taylor-leopold-unsplash.jpg"
+          alt="Weather Image"
+          width="100%"
+          height="auto"
+        />
+        <p>Windy and sunny with few clouds.</p>
+      </picture>
+      <picture>
+        <img
+          src="./images/graham-pengelly-unsplash.jpg"
+          alt="Weather Image"
+          width="100%"
+          height="auto"
+        />
+        <p>Pleasant sunset at the cost.</p>
+      </picture>
+      <picture>
+        <img
+          src="./images/glenn-horgan-unsplash.jpg"
+          alt="Weather Image"
+          width="100%"
+          height="auto"
+        />
+        <p>Thunderstorm coming at the horizon.</p>
+      </picture>
+      <picture>
+        <img
+          src="./images/cooper-baumgartner-unsplash.jpg"
+          alt="Weather Image"
+          width="100%"
+          height="auto"
+        />
+        <p>Strong lightning storm above.</p>
+      </picture>
+      <picture>
+        <img
+          src="./images/noaa-unsplash.jpg"
+          alt="Weather Image"
+          width="100%"
+          height="auto"
+        />
+        <p>Calm and rainbow after storm.</p>
+      </picture>
+      <picture>
+        <img
+          src="./images/noah-cellura-unsplash.jpg"
+          alt="Weather Image"
+          width="100%"
+          height="auto"
+        />
+        <p>Foggy dawning between mountains.</p>
+      </picture>
+      <picture>
+        <img
+          src="./images/sam-moqadam-unsplash.jpg"
+          alt="Weather Image"
+          width="100%"
+          height="auto"
+        />
+        <p>Sunny morning.</p>
+      </picture>
+      <picture>
+        <img
+          src="./images/simon-berger-unsplash.jpg"
+          alt="Weather Image"
+          width="100%"
+          height="auto"
+        />
+        <p>Ligth snow storm.</p>
+      </picture>
+      <picture>
+        <img
+          src="./images/jenny-salita-unsplash.jpg"
+          alt="Weather Image"
+          width="100%"
+          height="auto"
+        />
+        <p>Walk in the frozen lake.</p>
+      </picture>
+    </main>
+
+    <footer>
+      <p>
+        © Seu Tempo SP | Adler M. Orteney |
+        <a href="#">Service Terms</a>
+      </p>
+      <p id="lastUpdated"></p>
+    </footer>
+
+    <script>
+      document.getElementById("lastUpdated").textContent =
+        new Date().toLocaleDateString("en-UK", {
+          weekday: "long",
+          day: "2-digit",
+          month: "long",
+          year: "numeric",
+        });
+    </script>
+    <script src="./js/min-nav.js"></script>
+  </body>
+</html>

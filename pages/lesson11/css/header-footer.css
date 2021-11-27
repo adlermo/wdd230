@@ -1,0 +1,67 @@
+:root {
+  --black-fogra-29: #0d1f2d;
+  --middle-green: #4c956c;
+  --light-yellow: #fefee3;
+  --blue-ncs: #0090c1;
+  --persian-orange: #d68c45;
+}
+
+header {
+  background-color: var(--black-fogra-29);
+  color: var(--light-yellow);
+
+  min-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+}
+
+header > picture > img {
+  margin: 0 10px;
+}
+
+header > section > h1 {
+  margin: 5px 0;
+}
+header > section > q {
+  text-align: center;
+  color: var(--persian-orange);
+}
+
+header > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer stylings down here */
+
+#maps {
+  background-color: var(--middle-green);
+  padding: 2em 6em;
+}
+
+footer {
+  background-color: var(--black-fogra-29);
+  color: var(--light-yellow);
+
+  padding: 25px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer > p > a {
+  color: var(--light-yellow);
+}
+
+@media screen and (max-width: 568px) {
+  body {
+    font-size: 12px;
+  }
+}

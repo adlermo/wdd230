@@ -1,0 +1,81 @@
+main {
+  margin: 2em auto;
+  padding: 0 50px;
+  max-width: 1000px;
+}
+
+section {
+  text-align: center;
+}
+
+#summary {
+  display: flex;
+
+  align-items: flex-start;
+
+  background-image: url("../images/Soda\ Springs.jfif");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+#summary > div {
+  background-color: #efefefea;
+
+  margin: 1em;
+  padding: 1em 2em;
+}
+
+#summary > div > ul > li {
+  list-style-type: none;
+  margin: 0.5em 0;
+}
+
+#forecast > table {
+  width: 100%;
+
+  margin: 1em 0;
+}
+
+#article {
+  text-align: justify;
+
+  padding: 2em;
+
+  border: 1px solid var(--black-fogra-29);
+  background-color: var(--light-yellow);
+}
+
+#article > article > p {
+  padding-top: 1em;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 1px solid #2e2e2e;
+
+  text-align: center;
+  padding: 0.8em 0;
+}
+
+thead > tr:nth-child(2) {
+  background-color: var(--black-fogra-29);
+  color: var(--light-yellow);
+}
+
+tfoot td > a {
+  color: #efefef;
+}
+
+tfoot td {
+  font-size: 0.6em;
+  background-color: var(--black-fogra-29);
+  color: #efefef;
+}
+
+@media screen and (min-width: 1020px) {
+  #summary {
+    height: 400px;
+  }
+}

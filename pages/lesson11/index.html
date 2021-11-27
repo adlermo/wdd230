@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="shortcut icon"
-      href="../seutemposp/images/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="../seutemposp/css/header-footer.css" />
     <link rel="stylesheet" href="../seutemposp/css/home.css" />
@@ -22,7 +18,7 @@
     <header>
       <picture>
         <img
-          src="../lesson3/images/umbrella_icon.svg"
+          src="./images/umbrella_icon.svg"
           alt="Web Site Logo"
           width="80"
           height="80"
@@ -44,7 +40,7 @@
       </section>
       <ul hidden id="toggleMenu">
         <li><a class="active" href="#">Home</a></li>
-        <li><a href="../lesson10/preston-10.html">Preston</a></li>
+        <li><a href="./preston.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
@@ -65,17 +61,16 @@
     </footer>
 
     <script>
-      document.getElementById(
-        'lastUpdated'
-      ).textContent = new Date().toLocaleDateString('en-UK', {
-        weekday: 'long',
-        day: '2-digit',
-        month: 'long',
-        year: 'numeric',
-      });
+      document.getElementById("lastUpdated").textContent =
+        new Date().toLocaleDateString("en-UK", {
+          weekday: "long",
+          day: "2-digit",
+          month: "long",
+          year: "numeric",
+        });
     </script>
 
-    <script src="../seutemposp/js/min-nav.js" defer></script>
-    <script src="../seutemposp/js/town-service.js" defer></script>
+    <script src="./js/min-nav.js" defer></script>
+    <script src="./js/town-service.js" defer></script>
   </body>
 </html>

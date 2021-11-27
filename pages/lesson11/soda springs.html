@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/sodasprings.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img
+          src="./images/umbrella_icon.svg"
+          alt="Web Site Logo"
+          width="80"
+          height="80"
+        />
+      </picture>
+      <section>
+        <h1>Seu Tempo SP</h1>
+        <q><em>The web page's impact phrase/motto!</em></q>
+      </section>
+    </header>
+    <nav>
+      <section id="navMobile">
+        <input type="checkbox" id="checkbox-menu" />
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </section>
+      <ul hidden id="toggleMenu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./preston.html">Preston</a></li>
+        <li><a class="active" href="#">Soda Springs</a></li>
+        <li><a href="./fish haven.html">Fish Haven</a></li>
+        <li><a href="./stormcenter.html">Storm Center</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h1>Soda Springs</h1>
+
+        <div id="summary">
+          <div>
+            <h1>Weather Summary</h1>
+            <ul>
+              <li id="current-temp">Current:</li>
+              <li id="maxmin">Temperature:</li>
+              <li id="humidity">Humidity:</li>
+              <li id="wspeed">Wind Speed:</li>
+              <li id="chill">Wind Chill:</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="forecast">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="5" scope="colgroup">5 Day Forecast</th>
+            </tr>
+            <tr>
+              <td id="day0" scope="col">XXX</td>
+              <td id="day1" scope="col">XXX</td>
+              <td id="day2" scope="col">XXX</td>
+              <td id="day3" scope="col">XXX</td>
+              <td id="day4" scope="col">XXX</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="fc0"></td>
+              <td id="fc1"></td>
+              <td id="fc2"></td>
+              <td id="fc3"></td>
+              <td id="fc4"></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="5">
+                Provided by:
+                <a href="https://openweathermap.org/">OpenWeatherMap.org </a>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section id="article">
+        <article>
+          <h2>Article Title</h2>
+          <h5>by Unkown</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            consectetur dignissimos placeat minus nam magnam rem commodi,
+            explicabo totam officiis reiciendis necessitatibus earum incidunt
+            pariatur molestiae quaerat optio laborum non.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <section id="maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23471.966899125793!2d-111.60628165952181!3d42.661443075678676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1638044491371!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="300px"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+    <footer>
+      <p>
+        © Seu Tempo SP | Adler M. Orteney |
+        <a href="#">Service Terms</a>
+      </p>
+      <p id="lastUpdated"></p>
+    </footer>
+
+    <script>
+      document.getElementById("lastUpdated").textContent =
+        new Date().toLocaleDateString("en-UK", {
+          weekday: "long",
+          day: "2-digit",
+          month: "long",
+          year: "numeric",
+        });
+    </script>
+
+    <script src="./js/min-nav.js" defer></script>
+    <script src="./js/sodasprings.js" defer></script>
+  </body>
+</html>
