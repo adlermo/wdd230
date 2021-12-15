@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Quicksand");
+
+:root {
+  --garamond: "EB Garamond", serif;
+  --quicksand: "Quicksand", sans-serif;
+
+  --orange_pantone: #ee6123;
+  --gunmetal: #1c3041;
+  --dark_spring_green: #04724d;
+  --maximum_blue_green: #59c3c3;
+  --minion_yellow: #f4e04d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--quicksand);
+}
+
+/* Header styles --------- */
+
+header {
+  text-align: center;
+  background-color: var(--maximum_blue_green);
+
+  padding: 1em 0;
+}
+
+header > div {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  background-color: var(--maximum_blue_green);
+}
+
+/* Navigation styles ----- */
+
+nav {
+  padding: 1em 0.5em;
+  background-color: var(--gunmetal);
+}
+
+nav > ul > li {
+  padding: 0.5em 0;
+}
+
+nav > ul > li > a {
+  padding: 0.5em;
+  color: var(--maximum_blue_green);
+
+  text-decoration: none;
+}
+
+nav > ul > li > a.active_page {
+  text-decoration: underline overline;
+  text-underline-offset: 5px;
+  text-decoration-color: var(--orange_pantone);
+}
+
+nav > ul > li > a:hover {
+  text-decoration: underline overline;
+  text-underline-offset: 5px;
+}
+
+/* Main styles --------- */
+
+main p {
+  font-family: var(--garamond);
+  margin-top: 1em;
+}
+
+main > section {
+  padding: 1em 0.5em;
+}
+
+/* Footer styles --------- */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding: 1em 0.5em;
+  background-color: var(--gunmetal);
+}
+
+footer > p {
+  font-size: 0.8em;
+  color: white;
+}
+
+footer > section {
+  height: 2em;
+}
+
+footer > section > a {
+  margin: 0.2em;
+}
+
+footer > section > a > img {
+  color: white;
+}
+
+footer > section > a {
+  color: white;
+  text-decoration: none;
+}
+
+.highlight_text {
+  color: var(--orange_pantone);
+}
