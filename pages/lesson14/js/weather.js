@@ -16,6 +16,10 @@ const createCurrentForecast = (current) => {
 
   const h1 = document.createElement("h1");
   h1.textContent = `${current.temp.toFixed(1)}° C`;
+  h1.style.fontSize = "2.5em";
+  h1.style.padding = "0.3em";
+
+  const div = document.createElement("div");
 
   // Capitalizing weather condition
   const description = document.createElement("p");
@@ -26,9 +30,11 @@ const createCurrentForecast = (current) => {
   humidity.textContent = `Humidity: ${current.humidity}%`;
   humidity.style.textTransform = "capitalize";
 
+  div.appendChild(description);
+  div.appendChild(humidity);
+
   weather.appendChild(h1);
-  weather.appendChild(description);
-  weather.appendChild(humidity);
+  weather.appendChild(div);
 };
 
 (async () => {

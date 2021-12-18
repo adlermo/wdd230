@@ -76,12 +76,52 @@ main > section {
   padding: 1em 0.5em;
 }
 
+#ads {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#ads > div:nth-child(1) {
+  background-image: url("https://source.unsplash.com/featured/300x400/?ads");
+}
+
+#ads > div:nth-child(2) {
+  background-image: url("https://source.unsplash.com/featured/300x400/?advertising");
+}
+
+#ads > div {
+  width: 100%;
+  height: 320px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: end;
+
+  border: 1px dashed var(--gunmetal);
+
+  margin: 0.5em 0;
+}
+
+#ads > div > a {
+  margin-bottom: 2em;
+}
+
 /* 
-.city > div > img {
+#city > div > img {
 }
 */
 
-.map_info > div {
+#weather {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#map_info > div {
   display: flex;
 
   align-items: center;
@@ -99,7 +139,6 @@ a.button {
   color: var(--gunmetal);
 
   padding: 0.5em 1.5em;
-  max-width: 6em;
   max-height: 1.2em;
 
   background-color: white;
