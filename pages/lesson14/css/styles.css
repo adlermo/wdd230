@@ -67,13 +67,42 @@ nav > ul > li > a:hover {
 
 /* Main styles --------- */
 
-main p {
+main > p {
   font-family: var(--garamond);
   margin-top: 1em;
 }
 
 main > section {
   padding: 1em 0.5em;
+}
+
+/* 
+.city > div > img {
+}
+*/
+
+.map_info > div {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1em 0;
+}
+
+a.button {
+  border: 1px solid var(--dark_spring_green);
+  border-radius: 2px;
+
+  text-align: center;
+  text-decoration: none;
+  color: var(--gunmetal);
+
+  padding: 0.5em 1.5em;
+  max-width: 6em;
+  max-height: 1.2em;
+
+  background-color: white;
 }
 
 /* Footer styles --------- */
